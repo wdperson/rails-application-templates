@@ -14,6 +14,7 @@ gem_group :test do
   gem 'launchy'
   gem 'factory_girl_rails'
   gem 'database_cleaner'
+  gem 'shoulda-matchers'
 end
 
 run "cat << EOF >> .gitignore
@@ -47,3 +48,6 @@ end
 git :init
 git add: "."
 git commit: %Q{ -m 'Initial commit' }
+
+run "bundle install"
+generate "rspec:install"

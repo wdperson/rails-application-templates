@@ -16,3 +16,11 @@ g) Install pry for debugging
 h) Create a default .gitignore file
 
 Review the template to be sure it is going to do what you want.
+
+I have also included a .railsrc file.  This should go in your home
+directory for your user.  This will automatically add the switches in
+the file to your rails new <APP_NAME> command.  The defaults:
+1) Skip Unit Test
+2) Use MySQL
+3) Skip running Bundler (it is in the generic template file so no need to
+run twice)
